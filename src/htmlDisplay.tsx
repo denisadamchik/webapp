@@ -1,16 +1,18 @@
+import { createElement } from "./tools/jsxFactory";
 import { Product, Order } from "./data/entities";
 
-export class DomDisplay {
+export class HtmlDisplay {
   props!: {
     products: Product[];
     order: Order;
   };
 
   getContent(): HTMLElement {
-    let elem = document.createElement("h3");
-    elem.innerText = this.getElementText();
-    elem.classList.add("bg-primary", "text-center", "text-white", "p-2");
-    return elem;
+    return (
+      <h3 className="bg-secondary text-center text-white p-2">
+        {this.getElementText()}
+      </h3>
+    );
   }
 
   getElementText() {
