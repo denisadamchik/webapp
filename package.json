@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "build": "webpack --mode=production",
     "json": "json-server data.js -p 4600",
     "wds": "webpack serve",
     "start": "npm-run-all -p json wds"
