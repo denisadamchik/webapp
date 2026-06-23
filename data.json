@@ -64,20 +64,5 @@
       "price": 1200
     }
   ],
-  "orders": [
-    {
-      "lines": [],
-      "id": 1
-    },
-    {
-      "lines": [
-        {
-          "productId": 1,
-          "productName": "Kayak",
-          "quantity": 1
-        }
-      ],
-      "id": 2
-    }
-  ]
+  "orders": []
 }
